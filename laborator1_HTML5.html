@@ -1,0 +1,274 @@
+<!-- Laborator1 -->
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>	Formular înscriere Universitatea Babeș Bolyai </title>
+		<link rel="icon" type="image/x-icon" href="image1.png">
+	</head>
+	<body>
+		<div>
+			<table>
+				<tr>
+					<th>
+						<strong> UNIVERSITATEA BABEȘ BOLYAI </strong>
+					</th>
+					<th>
+						<img src="image1.png" alt="UBB logo">
+					</th>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<h4> Facultatea de Matematică și Informatică </h4> 
+						Pentru a accesa site-ul oficial al facultății apasați
+						<a href="https://www.cs.ubbcluj.ro/" target="_blank"> aici </a>.
+					</td>
+				</tr>
+			</table>
+			<br>
+		</div>
+		<div>
+			<table>
+				<tr>
+					<th> Cerere de înscriere </th>
+				</tr>
+				<tr>
+					<td> 
+						la concursul de admitere, 
+						<span style="color: blue"> sesiunea 2023 vară </span> 						
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<form method="GET" action="action.php">
+							<fieldset style="text-align: left;">
+								<legend> Informații personale: </legend>
+								<label for="fname"> PRENUME: </label>
+								<input type="text" id="fname" name="fname"> 
+
+								<label for="lname"> NUME: </label>
+								<input type="text" id="lname" name="lname">
+
+								<label for="email"> EMAIL: </label>
+								<input type="text" id="email" name="email"><br><br>
+
+								<label for="cnp"> COD NUMERIC PERSONAL: </label>
+								<input type="tel" id="cnp" name="cnp" maxlength="12">
+
+								<label for="data-nasterii"> DATA NAȘTERII: </label>
+								<input type="text" id="data-nasterii" name="data-nasterii"> <br><br>
+
+								<label for="locatie"> DOMICILIU: </label>
+								<input type="text" id="locatie" name="locatie">
+
+								<label for="tara"> ȚARA DE PROVENIENȚĂ: </label>
+								<input type="text" id="tara" name="tara"><br><br>
+
+								<label for="telefon"> NUMĂR DE TELEFON: </label>
+								<input type="tel" id="telefon" name="telefon" maxlength="10">
+
+								<label > SEX: </label>
+								<input type="radio" id="smasc" name="gender" value="Male">
+								<label for="smasc"> Masculin </label>
+
+								<input type="radio" id="sfem" name="gender" value="Female"><label for="sfem"> Feminin </label>
+								
+								<input type="radio" id="salta" name="gender" value="Other">
+								<label for="salta"> Altele </label>
+								
+								<br><br>
+
+								<label for="bac"> NOTĂ BACALAUREAT: </label>
+								<input type="number" id="bac" name="bac" min="5" max="10" >
+
+
+								<label for="starec"> STARE CIVILĂ (căsătorit/ necăsătorit/ divorțat/ văduv) </label>
+								
+								<select id="starec" name="starec">
+									<option value="casatorit/a"> Căsătorit/ă </option>
+									<option value="necasatorit/a"> Necăsătorit/ă </option>
+									<option value="divortat/a"> Divorțat/ă </option>
+									<option value="vaduv/a"> Văduv/ă </option>
+								</select>
+								
+								<br><br>
+								<label for="transport"> GRATUITATE TRANSPORT COMUN: </label>
+								<input type="text" id="transport" name="transport" disabled> 
+
+								<input type="checkbox" id="boala" name="stares"> 
+								<label for="boala"> BOALĂ GRAVĂ</label>
+								<br><br>
+								
+								<label for="lazi"> FORMA INVĂȚĂMÂNT: </label>
+								<input type="text" id="lazi" name="lazi" value="LA ZI" readonly>
+								<br><br>
+
+								<label for="descriere"> DESCRIERE CAZ DE BOALĂ (dacă e cazul): </label>
+								<br><br>
+
+								<textarea id="descriere" name="descriere" rows="5" cols="99">
+								</textarea>
+							</fieldset>
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td> <!-- Tabel inbricat 1-->
+ 						<h5> SPECIALIZĂRI ALESE ÎN ORDINEA PRIORITĂȚII </h5>
+ 						<table>
+							<tr>
+								<th> Nr. crt. </th>
+								<th> Specializare </th>
+								<th> Limbă </th>
+								<th> Buget </th>
+							</tr>
+							<tr>
+								<td> 1 </td>
+								<td>
+									<input type="text" id="specializare" name="specializare">
+								</td>
+								<td>
+									<select name="limba">
+										<option value="ro" selected> Română </option>
+										<option value="en"> Engleză </option>
+										<option value="ma"> Maghiară </option>
+										<option value="ge"> Germană </option>
+									</select>
+								</td>
+								<td>
+									<input type="checkbox" checked>
+								</td>
+							</tr>
+
+							<tr>
+								<td> 2 </td>
+								<td>
+									<input type="text" id="specializare1" name="specializare1">
+								</td>
+								<td>
+									<select name="limba">
+										<option value="ro"> Română </option>
+										<option value="en" selected> Engleză </option>
+										<option value="ma"> Maghiară </option>
+										<option value="ge"> Germană </option>
+									</select>
+								</td>
+								<td>
+									<input type="checkbox" checked>
+								</td>
+							</tr>
+
+							<tr>
+								<td> 3 </td>
+								<td>
+									<input type="text" id="specializare2" name="specializare2">
+								</td>
+								<td>
+									<select name="limba">
+										<option value="ro"> Română </option>
+										<option value="en"> Engleză </option>
+										<option value="ma" selected> Maghiară </option>
+										<option value="ge"> Germană </option>
+									</select>
+								</td>
+								<td>
+									<input type="checkbox" checked>
+								</td>
+							</tr>
+
+							<tr>
+								<td> 4 </td>
+								<td>
+									<input type="text" id="specializare3" name="specializare3">
+								</td>
+								<td> 
+									<select name="limba">
+										<option value="ro"> Română </option>
+										<option value="en"> Engleză </option>
+										<option value="ma"> Maghiară </option>
+										<option value="ge" selected> Germană </option>
+									</select>
+								</td>
+								<td>
+									<input type="checkbox" checked>
+								</td>
+							</tr>
+
+							<tr>
+								<td> 5 </td>
+								<td>
+									<input type="text" id="specializare4" name="specializare4">
+								</td>
+								<td>
+									<select name="limba">
+										<option value="ro"> Română </option>
+										<option value="en"> Engleză </option>
+										<option value="ma"> Maghiară </option>
+										<option value="ge"> Germană </option>
+									</select>
+								</td>
+								<td>
+									<input type="checkbox" checked>
+								</td>
+							</tr>
+
+
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td> <!-- Tabel inbricat 2-->
+						
+						<table>
+							<tr>
+								<th>
+									<span style="color: gray;text-align: left;"> Specializari disponibile Facultatea de Matematica si Informatica 2023 </span>
+								</th>
+								<th>
+									Incarcati diploma de bacalaureat insotita de foaia matricola.
+									<form action="/action_page.php">
+									  <input type="file" id="files" name="files" multiple>
+									</form>
+								</th>
+							</tr>
+							<tr>
+								<td>
+									<ol start="10">
+									<li> Informatica 
+										<ol type="i">
+											<li> Română: 215 locuri </li>
+											<li> Engleză: 217 locuri </li>
+											<li> Maghiară: 70 locuri </li>
+											<li> Germană: 30 locuri </li>
+										</ol>
+									</li>
+									<li> Matematica - Informatica 
+										<ol type="A">
+											<li> Română: 170 locuri </li>
+											<li> Engleză: 150 locuri </li>
+											<li> Maghiară: 60 locuri </li>
+											<li> Germană: 30 locuri </li>
+										</ol>
+									</li>
+									<li> Matematica 
+										<ul>
+											<li> Română: 100 locuri </li>
+											<li> Engleză: 60 locuri </li>
+											<li> Maghiară: 50 locuri </li>
+											<li> Germană: 5 locuri </li>
+										</ul>
+									</li>
+								</ol>
+								</td>
+								<td>
+									<input type="submit" name="submit" value="Creeaza cerere">
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
